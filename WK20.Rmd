@@ -1,0 +1,37 @@
+---
+title: "DataInMotion-WK20"
+author: "Mohammed Alrezq"
+date: "2023-05-08"
+output: html_document
+---
+
+
+```{r}
+url <- "https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/09_Time_Series/Apple_Stock/appl_1980_2014.csv"
+
+wk20_data <- read.csv(url)
+str(wk20_data)
+```
+
+
+```{r}
+# 1. Check out the type of the columns
+str(wk20_data)
+```
+
+All column is numeric except volume is integer and date is character 
+
+```{r}
+# 2. Transform the Date column as a datetime type
+library(tidyverse)
+wk20_data %>% 
+  mutate(Date = ymd(Date))
+
+str(wk20_data)
+```
+
+```{r}
+
+```
+
+
