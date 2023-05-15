@@ -3,7 +3,7 @@
 
 This data received from Data Motion/weekly practice: Week 20
 
-data:  https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/09_Time_Series/Apple_Stock/appl_1980_2014.csv
+To access the data, [click here](https://raw.githubusercontent.com/guipsamora/pandas_exercises/master/09_Time_Series/Apple_Stock/appl_1980_2014.csv)
 
 **Challenge Questions
 1. Check out the type of the columns
