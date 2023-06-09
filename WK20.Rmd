@@ -13,6 +13,11 @@ wk20_data <- read.csv(url)
 str(wk20_data)
 ```
 
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
 
 ```{r}
 # 1. Check out the type of the columns
@@ -23,15 +28,20 @@ All column is numeric except volume is integer and date is character
 
 ```{r}
 # 2. Transform the Date column as a datetime type
-library(tidyverse)
-wk20_data %>% 
+wk20_data <-  wk20_data %>%
   mutate(Date = ymd(Date))
 
-str(wk20_data)
 ```
 
 ```{r}
+#3. Set the date as the index
+rownames(wk20_data$Date) <- wk20_data$Date
 
 ```
 
+
+
+```{r}
+where to ?
+```
 
